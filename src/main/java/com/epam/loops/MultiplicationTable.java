@@ -3,7 +3,7 @@ package com.epam.loops;
 import java.util.Scanner;
 
 public class MultiplicationTable {
-    Scanner scanner = new Scanner(System.in);
+
     public void printTable(int numberTableToPrint) {
         if (numberTableToPrint <= 0) {
             System.out.println("Please enter a positive integer.");
@@ -27,5 +27,4 @@ public class MultiplicationTable {
 
         scanner.close();
     }
-
 }

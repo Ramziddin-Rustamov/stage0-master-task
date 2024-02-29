@@ -8,17 +8,15 @@ public class HalfPyramid {
             return;
         }
         System.out.println("Half Pyramid with cathetus length " + cathetusLength + ":");
-        for (int i=1; i <=cathetusLength; i++) {
-            for (int j=0; j <=i ; j++) {
+        for (int i = 1; i <= cathetusLength; i++) {
+            for (int j = 1; j <= i; j++) {
                 System.out.print("* ");
             }
-            System.out.println("  ");
+            System.out.println();  // Move to the next line after each row
         }
     }
 
     public static void main(String[] args) {
-
         new HalfPyramid().printHalfPyramid(8);
     }
-
 }
